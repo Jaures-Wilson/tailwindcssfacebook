@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-full overflow-scroll box-border">
+    <main class="w-full h-full bg-zinc-300 flex flex-col items-center pt-1 border border-zinc-300 md:flex-row md:justify-around">
+    <div>
+        <img src="image/Face.png" title="facebook" alt="logo facebook" class="p-3 h-12 w-40 mt-5 md:invisible md:hidden">
+        <i class="fa-brands fa-square-facebook face hidden invisible text-blue-600 md:block md:visible md:text-9xl"></i>
+    </div> 
+    <div style="background-color: white;" class="mx-5 w-11/12 h-5/6 mb-20 rounded-lg mt-5 shadow-[5px_5px_5px_rgba(0,0,0,0.5)] md:w-1/2">
+        <div class="total-contneur2">
+            <div style="font-family:  Helvetica, Arial, sans-serif;" class="flex flex-col items-center p-1 border border-b-zinc-300">
+                <div><strong class="text-2xl">Créer un compte</strong></div>
+                <div class="text-zinc-500">C'est rapide et facile</div>
+            </div>
+            
+            <div>
+                <form method="post">
+                    
+                    <div class="px-2 pt-2 grid grid-cols-[1fr] grid-rows-[20px_20px_20px_20px] gap-3 xl:grid-cols-[1fr_1fr] xl:grid-rows-[20px_20px]">    
+                        <input type="text" name="prenom" class="col-start-1 col-end-2 row-start-1 row-end-2 outline-none pl-1 h-6 rounded-sm text-lg border border-zinc-300" id="prenom" placeholder="Prénom" size="5">
+                        <input type="text" name="nomfamille" class="col-start-1 col-end-2 row-start-2 row-end-3 outline-none pl-1 h-6 rounded-sm text-lg border border-zinc-300 xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:row-end-2" id="nomfamille" placeholder="Nom de famille" size="6">
+                        <input type="text" name="mobileemail" class="col-start-1 col-end-2 row-start-3 row-end-4 outline-none pl-1 h-6 rounded-sm text-lg border border-zinc-300 xl:col-start-1 xl:col-end-2 xl:row-start-2 xl:row-end-3" id="mobileemail" placeholder="numéro mobile ou email">
+                        <input type="password" name="motpass" class="col-start-1 col-end-2 row-start-4 row-end-5 outline-none pl-1 h-6 rounded-sm text-lg border border-zinc-300 xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3" id="motpass" placeholder="Nouveau mot de passe">   
+                    </div>
+                    
+                        <div class="dateClass mt-2">
+                            <label class="ml-2 text-sm text-zinc-600" for="jour mois annee">Date de naissance       <i class="fa-solid fa-circle-question"></i></label>
+                        </div>
+                        <div>
+                            
+                                <div class="px-2 grid grid-cols-[1fr] grid-rows-[20px_20px_20px] gap-4 xl:grid-cols-[1fr_1fr_1fr] xl:grid-rows-[20px]">
+                                    <select name="jour" class="col-start-1 col-end-2 row-start-1 row-end-2 p-1 rounded-sm h-7 text-sm border" id="jour">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                
+                                    <select name="mois" class="col-start-1 col-end-2 row-start-2 row-end-3 p-1 rounded-sm h-7 text-sm border xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:row-end-2" id="mois">
+                                        <option value="jan">jan</option>
+                                        <option value="fev">fev</option>
+                                        <option value="mar">mar</option>
+                                        <option value="avr">avr</option>
+                                        <option value="mai">mai</option>
+                                        <option value="jun">jun</option>
+                                        <option value="juil">juil</option>
+                                        <option value="août">août</option>
+                                        <option value="sep">sep</option>
+                                        <option value="oct">oct</option>
+                                        <option value="nov">nov</option>
+                                        <option value="dec">déc</option>
+                                    </select> 
+                                
+                                    <select name="annee" class="col-start-1 col-end-2 row-start-3 row-end-4 p-1 rounded-sm h-7 text-sm border xl:col-start-3 xl:col-end-4 xl:row-start-1 xl:row-end-2" id="annee">
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                    </select>
+                                </div>
+                            
+                        </div>    
+                        
+                    
+                    <div class="genreClass mt-4">
+                        <label class="ml-2 text-sm text-zinc-600" for="genre">Genre      <i class="fa-solid fa-circle-question"></i> <span class="error5"></span></label>
+                    </div>
+                    <div class="px-2 grid grid-cols-[1fr] grid-rows-[22px_22px_22px] gap-2 xl:grid-cols-[1fr_1fr_1fr] xl:grid-rows-[20px]">
+                                <div class="col-start-1 col-end-2 row-start-1 row-end-2 text-sm rounded-sm border border-zinc-300 flex flex-row justify-between items-center"><label class="text-sm border-none pl-1" for="Femme">Femme</label><input type="radio" name="genre" value="Femme" class="w-4 h-4 mr-1 mb-1 mt-1" id="Femme"> </div>
+                                <div class="col-start-1 col-end-2 row-start-2 row-end-3 text-sm rounded-sm border border-zinc-300 flex flex-row justify-between items-center xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:row-end-2"><label class="text-sm border-none pl-1" for="Homme">Homme</label><input type="radio" name="genre" value="Homme" class="w-4 h-4 mr-1 mb-1 mt-1" id="Homme"> </div>
+                                <div class="col-start-1 col-end-2 row-start-3 row-end-4 text-sm rounded-sm border border-zinc-300 flex flex-row justify-between items-center xl:col-start-3 xl:col-end-4 xl:row-start-1 xl:row-end-2"><label class="text-sm border-none pl-1" for="Personalise">Personalisé</label><input type="radio" name="genre" value="Personalise" class="w-4 h-4 mr-1 mb-1 mt-1" id="Personalise"> </div>                      
+                    </div>
+                    <div>
+                        <p class="text-zinc-600 text-[10px] px-1 mt-2">
+                            Les personnes qui utilisent notre service ont pu importer vos coordonnées sur Facebook. <a href="" class="text-blue-500 no-underline hover:underline">savoir plus.</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-zinc-600 text-[10px] px-1">
+                            En cliquant sur S’inscrire, vous acceptez nos <a href="" class="text-blue-500 no-underline hover:underline">Conditions générales</a>. Découvrez comment nous recueillons, utilisons et partageons vos données en lisant notre <a href="" class="text-blue-500 no-underline hover:underline">Politique de confidentialité</a> et comment nous utilisons les cookies et autres technologies similaires en consultant notre <a href="" class="text-blue-500 no-underline hover:underline">Politique d’utilisation des cookies</a>. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div>
+                            <button class="bg-green-600 text-zinc-50 px-8 py-1 text-base rounded-lg m-1 mt-5 hover:bg-green-400">S'inscrire</button>
+                        </div>
+                        <div class="appearance-none text-base p-5">
+                            <a href="" class="text-blue-500 no-underline hover:underline">Vous avez déjà un compte ?</a>
+                        </div>
+                    </div> 
+                    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="m-5 w-11/12 text-xs flex flex-col justify-between">
+        <div class="flex flex-row justify-between flex-wrap text-xs pb-1">
+            <p>Français (France)</p><a href="" class="text-blue-500 no-underline hover:underline">English (US)</a><a href="" class="text-blue-500 no-underline hover:underline">Fula</a><a href="" class="text-blue-500 no-underline hover:underline">Español (España)</a><a href="" class="text-blue-500 no-underline hover:underline">Deutsch</a><a href="" class="text-blue-500 no-underline hover:underline">Bahasa Indonesia</a><a href="" class="text-blue-500 no-underline hover:underline">Italiano</a><a href="" class="text-blue-500 no-underline hover:underline">Português (Brasil)</a><a href="" class="text-blue-500 no-underline hover:underline"> العربية</a><a href="" class="text-blue-500 no-underline hover:underline"> हिन्दी</a><a href="" class="text-blue-500 no-underline hover:underline"> 中文(简体)</a>   
+        </div>
+        <div class="flex flex-row justify-between flex-wrap border border-t-zinc-300 pt-1">
+           <a href="" class="text-blue-500 no-underline hover:underline">S’inscrire</a><a href="" class="text-blue-500 no-underline hover:underline">Se connecter</a><a href="" class="text-blue-500 no-underline hover:underline">Messenger</a><a href="" class="text-blue-500 no-underline hover:underline">Facebook Lite</a><a href="" class="text-blue-500 no-underline hover:underline">Vidéo</a><a href="" class="text-blue-500 no-underline hover:underline">Lieux</a><a href="" class="text-blue-500 no-underline hover:underline">Jeux</a><a href="" class="text-blue-500 no-underline hover:underline">Marketplace</a><a href="" class="text-blue-500 no-underline hover:underline"> Meta Pay</a><a href="" class="text-blue-500 no-underline hover:underline">Meta Store</a><a href="" class="text-blue-500 no-underline hover:underline"> Meta Quest</a><a href="" class="text-blue-500 no-underline hover:underline"> Meta AI</a><a href="" class="text-blue-500 no-underline hover:underline"> Instagram</a><a href="" class="text-blue-500 no-underline hover:underline"> Threads</a>
+        </div>
+        <div class="flex flex-row justify-between flex-wrap">
+            <a href="" class="text-blue-500 no-underline hover:underline">Collectes de dons</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Services</a>
+            <a href="" class="text-blue-500 no-underline hover:underline" >Centre d’information sur les élections</a>
+            <a href="" class="text-blue-500 no-underline hover:underline"> Politique de confidentialité</a>
+            <a href="" class="text-blue-500 no-underline hover:underline"> Centre de confidentialité</a>
+            <a href="" class="text-blue-500 no-underline hover:underline"> Groupes</a>
+            <a href="" class="text-blue-500 no-underline hover:underline"> À propos</a>
+            <a href="" class="text-blue-500 no-underline hover:underline"> Créer une publicité</a>
+        </div>
+        <div class="flex flex-row justify-between flex-wrap">
+            <a href="" class="text-blue-500 no-underline hover:underline">Créer une Page</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Développeurs</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Emplois</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Cookies</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Choisir sa publicité</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Conditions générales</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Aide</a>
+            <a href="" class="text-blue-500 no-underline hover:underline">Importation des contacts et non-utilisateursParamètres</a>
+        </div>
+        <div class="flex flex-row justify-between flex-wrap">
+            <p>Meta 2024</p>
+        </div>
+    </footer>    
+</body>
+</html>
